@@ -47,7 +47,9 @@ def plot_gantt(processes):
     ax.set_yticklabels(yticklabels)
     ax.set_title("FIFO Scheduler Process Execution Timeline")
     plt.tight_layout()
-    plt.show()
+    plt.savefig("fifo_scheduler_gantt.png")
+    print("Gantt chart saved to fifo_scheduler_gantt.png")
+
 
 def main():
     log_file = "fifo_scheduler.log"
