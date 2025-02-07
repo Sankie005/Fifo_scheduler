@@ -1,1 +1,7 @@
+#Ignores Venv 
 venv/
+#Ignore the compiled C outputs
+lifo_scheduler
+fifo_scheduler
+#Keeps the Makefile
+!Makefile
