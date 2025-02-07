@@ -16,7 +16,7 @@ After this step you should hopefully see two log files named `fifo_scheduler.log
 1. Create a new venv with `python3 -m venv venv` you may have to install python3 virtual environments if it doesn't come pre installed, here's a link to a [guide](https://www.arubacloud.com/tutorial/how-to-create-a-python-virtual-environment-on-ubuntu.aspx)
 2. Actvate the virtual environment with `source nameofyourvenv/bin/activate`
 3. Install matplotlib with `pip install maptlotlib`
-4. Run the script with `python3 plot_fifo.py`
+4. Run the script with `python3 plot.py`
 
 # Output 
 The output should be stored in schedulers_gnatt.png 
