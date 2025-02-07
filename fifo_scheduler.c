@@ -23,11 +23,10 @@ long get_timestamp_ms() {
 }
 
 void simulate_work() {
-    // Simulate work (this could be replaced with actual computation)
     sleep(WORK_DURATION);
 }
 
-void log_process_info(pid_t pid, long start_time, long end_time) {
+void log_process_info(int process_number, pid_t pid, long start_time, long end_time) {
     FILE *fp = fopen(LOG_FILE, "a");
     if (!fp) {
         perror("fopen");
@@ -38,7 +37,7 @@ void log_process_info(pid_t pid, long start_time, long end_time) {
         perror("flock");
         exit(EXIT_FAILURE);
     }
-    fprintf(fp, "PID=%d, start=%ld, end=%ld\n", pid, start_time, end_time);
+    fprintf(fp, "Process %d (PID=%d), start=%ld ms, end=%ld ms\n", process_number, pid, start_time, end_time);
     fflush(fp);
     flock(fileno(fp), LOCK_UN);
     fclose(fp);
@@ -46,7 +45,7 @@ void log_process_info(pid_t pid, long start_time, long end_time) {
 
 int main(int argc, char *argv[]) {
     int i;
-    
+
     // Clear (or create) the log file at startup
     FILE *fp = fopen(LOG_FILE, "w");
     if (fp) {
@@ -54,7 +53,7 @@ int main(int argc, char *argv[]) {
     } else {
         perror("fopen");
     }
-    
+
     for (i = 0; i < NUM_PROCESSES; i++) {
         pid_t pid = fork();
         if (pid < 0) {
@@ -64,23 +63,22 @@ int main(int argc, char *argv[]) {
         if (pid == 0) {
             // In the child process
             struct sched_param param;
-            param.sched_priority = 50; // Valid range for SCHED_FIFO is 1-99
+            param.sched_priority = 50;  // Fixed priority for FIFO scheduler
             if (sched_setscheduler(0, SCHED_FIFO, &param) == -1) {
                 fprintf(stderr, "Child PID %d: sched_setscheduler failed: %s\n", getpid(), strerror(errno));
                 exit(EXIT_FAILURE);
             }
             long start_time = get_timestamp_ms();
-            printf("Child PID %d starting work at %ld ms\n", getpid(), start_time);
+            printf("Process %d (PID=%d) starting work at %ld ms\n", i + 1, getpid(), start_time);
             simulate_work();
             long end_time = get_timestamp_ms();
-            printf("Child PID %d finished work at %ld ms\n", getpid(), end_time);
-            log_process_info(getpid(), start_time, end_time);
+            printf("Process %d (PID=%d) finished work at %ld ms\n", i + 1, getpid(), end_time);
+            log_process_info(i + 1, getpid(), start_time, end_time);
             exit(EXIT_SUCCESS);
         }
-        // Parent: sleep briefly to let each child get started
-        usleep(100000); // 100 ms delay
+        usleep(100000); // 100 ms delay for clarity
     }
-    
+
     // Wait for all children to finish
     for (i = 0; i < NUM_PROCESSES; i++) {
         wait(NULL);
