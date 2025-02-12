@@ -33,4 +33,6 @@ Follows the "First In First Out" principle, the processes are simply presented i
 Implments "Last In First Out" principle by increasing the priority of processes as they are added to the queue, resulting in processes that arrive at the end to have a higher priority. 
 ### RoundRobin Scheduler:
 Implements the roundrobin scheduler where each process gets to run for 1 quantum before having to give up the cpu to the process next in line which will then run for 1 quantum, give up the cpu and so on. 
+
+## Output Chart:
 ![Chart](https://github.com/Sankie005/Fifo_scheduler/blob/main/schedulers_gantt.png?raw=true)

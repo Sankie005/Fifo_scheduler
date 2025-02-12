@@ -1,10 +1,10 @@
-Process 3 (PID 7036) starting work with priority 53 at 1739402681165 ms
+Process 3 (PID 7485) starting work with priority 53 at 1739402861477 ms
 Process 3 is working...
-Process 3 (PID 7036) finished work at 1739402684166 ms
-Process 2 (PID 7035) starting work with priority 52 at 1739402682065 ms
+Process 3 (PID 7485) finished work at 1739402864477 ms
+Process 2 (PID 7472) starting work with priority 52 at 1739402862376 ms
 Process 2 is working...
-Process 2 (PID 7035) finished work at 1739402685065 ms
-Process 1 (PID 7034) starting work with priority 51 at 1739402682964 ms
+Process 2 (PID 7472) finished work at 1739402865377 ms
+Process 1 (PID 7471) starting work with priority 51 at 1739402863276 ms
 Process 1 is working...
-Process 1 (PID 7034) finished work at 1739402685964 ms
+Process 1 (PID 7471) finished work at 1739402866277 ms
 All child processes have completed.
