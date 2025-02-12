@@ -1,4 +1,4 @@
-# LIFO and FIFO Schedulers using Sched_ext 
+# Schedulers using Sched_ext 
 
 ### Usage
 #### Installation
@@ -10,7 +10,7 @@ To use provided script:
 1. `chmod +x deploy.sh`
 2. `sudo ./deploy.sh`
 
-After this step you should hopefully see two log files named `fifo_scheduler.log` and `lifo_scheduler.log`
+After this step you should hopefully see log files named `fifo_scheduler.log`, `fifo_rr_scheduler.log` and `lifo_scheduler.log`
 
 ### Running python graphing step 
 1. Create a new venv with `python3 -m venv venv` you may have to install python3 virtual environments if it doesn't come pre installed, here's a link to a [guide](https://www.arubacloud.com/tutorial/how-to-create-a-python-virtual-environment-on-ubuntu.aspx)
@@ -31,4 +31,6 @@ Follows the "First In First Out" principle, the processes are simply presented i
 
 ### LIFO Scheduler: 
 Implments "Last In First Out" principle by increasing the priority of processes as they are added to the queue, resulting in processes that arrive at the end to have a higher priority. 
+### RoundRobin Scheduler:
+Implements the roundrobin scheduler where each process gets to run for 1 quantum before having to give up the cpu to the process next in line which will then run for 1 quantum, give up the cpu and so on. 
 ![Chart](https://github.com/Sankie005/Fifo_scheduler/blob/main/schedulers_gantt.png?raw=true)

@@ -1,19 +1,19 @@
 Starting FIFO Round-Robin Scheduler...
-Process 1 (PID=5961) started first.
-Process 1 (PID=5961) paused, remaining time: 200 ms
-Process 2 (PID=5962) resumed, remaining time: 300 ms
-Process 2 (PID=5962) paused, remaining time: 200 ms
-Process 3 (PID=5963) resumed, remaining time: 300 ms
-Process 3 (PID=5963) paused, remaining time: 200 ms
-Process 1 (PID=5961) resumed, remaining time: 200 ms
-Process 1 (PID=5961) paused, remaining time: 100 ms
-Process 2 (PID=5962) resumed, remaining time: 200 ms
-Process 2 (PID=5962) paused, remaining time: 100 ms
-Process 3 (PID=5963) resumed, remaining time: 200 ms
-Process 3 (PID=5963) paused, remaining time: 100 ms
-Process 1 (PID=5961) resumed, remaining time: 100 ms
-Process 1 (PID=5961) finished execution.
-Process 2 (PID=5963) resumed, remaining time: 100 ms
-Process 2 (PID=5963) finished execution.
-Process 1 (PID=5962) resumed, remaining time: 100 ms
+Process 1 (PID=7079) started first.
+Process 1 (PID=7079) paused, remaining time: 200 ms
+Process 2 (PID=7080) resumed, remaining time: 300 ms
+Process 2 (PID=7080) paused, remaining time: 200 ms
+Process 3 (PID=7081) resumed, remaining time: 300 ms
+Process 3 (PID=7081) paused, remaining time: 200 ms
+Process 1 (PID=7079) resumed, remaining time: 200 ms
+Process 1 (PID=7079) paused, remaining time: 100 ms
+Process 2 (PID=7080) resumed, remaining time: 200 ms
+Process 2 (PID=7080) paused, remaining time: 100 ms
+Process 3 (PID=7081) resumed, remaining time: 200 ms
+Process 3 (PID=7081) paused, remaining time: 100 ms
+Process 1 (PID=7079) resumed, remaining time: 100 ms
+Process 1 (PID=7079) finished execution.
+Process 2 (PID=7081) resumed, remaining time: 100 ms
+Process 2 (PID=7081) finished execution.
+Process 1 (PID=7080) resumed, remaining time: 100 ms
 All processes completed.

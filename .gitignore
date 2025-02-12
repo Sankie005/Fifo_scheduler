@@ -6,4 +6,4 @@ fifo_scheduler
 fifo_rr_scheduler
 #Keeps the Makefile
 !Makefile
-.vscode/* 
+.vscode/*
