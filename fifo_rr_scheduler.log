@@ -1,0 +1,19 @@
+Starting FIFO Round-Robin Scheduler...
+Process 1 (PID=12875) started first.
+Process 1 (PID=12875) paused, remaining time: 200 ms
+Process 2 (PID=12876) resumed, remaining time: 300 ms
+Process 2 (PID=12876) paused, remaining time: 200 ms
+Process 3 (PID=12877) resumed, remaining time: 300 ms
+Process 3 (PID=12877) paused, remaining time: 200 ms
+Process 1 (PID=12875) resumed, remaining time: 200 ms
+Process 1 (PID=12875) paused, remaining time: 100 ms
+Process 2 (PID=12876) resumed, remaining time: 200 ms
+Process 2 (PID=12876) paused, remaining time: 100 ms
+Process 3 (PID=12877) resumed, remaining time: 200 ms
+Process 3 (PID=12877) paused, remaining time: 100 ms
+Process 1 (PID=12875) resumed, remaining time: 100 ms
+Process 1 (PID=12875) finished execution.
+Process 2 (PID=12877) resumed, remaining time: 100 ms
+Process 2 (PID=12877) finished execution.
+Process 1 (PID=12876) resumed, remaining time: 100 ms
+All processes completed.

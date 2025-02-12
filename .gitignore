@@ -3,5 +3,6 @@ venv/
 #Ignore the compiled C outputs
 lifo_scheduler
 fifo_scheduler
+fifo_rr_scheduler
 #Keeps the Makefile
 !Makefile

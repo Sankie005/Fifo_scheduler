@@ -1,3 +1,7 @@
-Process 1 (PID=8251), start=1738967332911 ms, end=1738967335911 ms
-Process 2 (PID=8252), start=1738967333012 ms, end=1738967336013 ms
-Process 3 (PID=8253), start=1738967333113 ms, end=1738967336113 ms
+Process 1 (PID=12753) starting work at 1739321754332 ms
+Process 1 (PID=12753) finished work at 1739321757333 ms
+Process 2 (PID=12754) starting work at 1739321754433 ms
+Process 2 (PID=12754) finished work at 1739321757434 ms
+Process 3 (PID=12755) starting work at 1739321754534 ms
+Process 3 (PID=12755) finished work at 1739321757534 ms
+All child processes have completed.

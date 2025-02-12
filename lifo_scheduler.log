@@ -1,3 +1,10 @@
-Process 3 (PID=8324), start=1738967336319 ms, end=1738967339320 ms
-Process 2 (PID=8310), start=1738967337219 ms, end=1738967340220 ms
-Process 1 (PID=8309), start=1738967338117 ms, end=1738967341118 ms
+Process 3 (PID 12839) starting work with priority 53 at 1739321757739 ms
+Process 3 is working...
+Process 3 (PID 12839) finished work at 1739321760740 ms
+Process 2 (PID 12838) starting work with priority 52 at 1739321758640 ms
+Process 2 is working...
+Process 2 (PID 12838) finished work at 1739321761641 ms
+Process 1 (PID 12837) starting work with priority 51 at 1739321759538 ms
+Process 1 is working...
+Process 1 (PID 12837) finished work at 1739321762539 ms
+All child processes have completed.
