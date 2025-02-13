@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <sys/time.h>
 
-#define TIME_QUANTUM 100  // Time quantum in milliseconds
+#define TIME_QUANTUM 500  // Time quantum in milliseconds
 #define MAX_PROCESSES 10
 
 typedef struct {

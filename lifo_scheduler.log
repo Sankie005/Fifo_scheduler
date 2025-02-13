@@ -1,10 +1,10 @@
-Process 3 (PID 5171) starting work with priority 53 at 1739405196901 ms
+Process 3 (PID 5367) starting work with priority 53 at 1739482346013 ms
 Process 3 is working...
-Process 3 (PID 5171) finished work at 1739405199902 ms
-Process 2 (PID 5170) starting work with priority 52 at 1739405197800 ms
+Process 3 (PID 5367) finished work at 1739482349013 ms
+Process 2 (PID 5366) starting work with priority 52 at 1739482346911 ms
 Process 2 is working...
-Process 2 (PID 5170) finished work at 1739405200801 ms
-Process 1 (PID 5169) starting work with priority 51 at 1739405198699 ms
+Process 2 (PID 5366) finished work at 1739482349912 ms
+Process 1 (PID 5365) starting work with priority 51 at 1739482347811 ms
 Process 1 is working...
-Process 1 (PID 5169) finished work at 1739405201700 ms
+Process 1 (PID 5365) finished work at 1739482350812 ms
 All child processes have completed.
